@@ -80,3 +80,12 @@ function playPause(){
 }
 
 videoButton.addEventListener('click', playPause)
+
+function finalVideo(){
+    // Video Ends , Icon Change
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
+
+//ended , whe the video Ends 
+videoFile.addEventListener('ended',finalVideo)
